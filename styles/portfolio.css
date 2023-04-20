@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+  max-width: 1500px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.row {
+  margin: 10px -16px;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  -ms-flex: 33.333%; /* IE10 */
+  flex: 33.333%;
+  max-width: 33.333%;
+  display: none; /*Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  padding: 12px 16px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+a {
+  color: rgb(101 , 101, 101);
+}
+
+
+@media screen and (max-width: 768px){
+  .main {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

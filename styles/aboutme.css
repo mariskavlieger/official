@@ -1,0 +1,94 @@
+.sidBarOverMij {
+  background-color: rgba(209, 209, 209, 0.5);
+  padding-top: 10px;
+  padding-left: 20px;
+  height: 100%;
+  color: #777;
+}
+
+/* general text about me */
+.overMij{
+  margin-left: 100px;
+  margin-right: 250px;
+}
+
+/* making grid */
+.aboutMeContent {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 50px;
+}
+
+.footerContactContent {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 0px;
+
+  margin-top: 250px;
+  margin-left: 100px;
+  margin-right: 250px;
+  margin-bottom: 75px;
+
+  border-style: solid;
+
+}
+.footerText {
+  padding-top: 10px;
+  padding-left: 20px;
+  height: 100%;
+  color: #777;
+}
+
+.footerPicture {
+  max-width: 150px; 
+  margin-left: 100px;
+}
+
+.contactInfo {
+  margin-left: 2.5em;
+}
+/* ------------------------------------------------------------------------------------- */
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 768px) {
+  .overMij{
+    margin-left: 5px ;
+    margin-right: 5px ;
+  }
+  .aboutMeContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidBarOverMij{
+    padding-bottom: 10px;
+  }
+
+  .footerContactContent {
+    display: flex;
+  
+    margin-top: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 50px;
+  
+    border-style: none;
+  
+  }
+  .footerText {
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 100%;
+    color: #777;
+  }
+  
+  .footerPicture {
+    max-width: 150px; 
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  
+  .contactInfo {
+    margin-left: 5px;
+  }
+
+
+}

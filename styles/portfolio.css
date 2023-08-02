@@ -25,12 +25,11 @@
 
 /* Create three equal columns that floats next to each other */
 .column {
-  -ms-flex: 33.333%; /* IE10 */
-  flex: 33.333%;
-  max-width: 33.333%;
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+  max-width: 100%;
   display: none; /*Hide all elements by default */
 }
-
 /* Clear floats after rows */ 
 .row:after {
   content: "";
@@ -42,6 +41,12 @@
 .content {
   background-color: white;
   padding: 10px;
+  text-align: center;
+  
+}
+
+.img{
+  width: 50%;
 }
 
 /* The "show" class is added to the filtered elements */
@@ -79,10 +84,15 @@ a {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
-    flex: 50%;
-    max-width: 50%;
+    flex: 100%;
+    max-width: 100%;
+    
+  }
+  .img{
+    width: 100%;
   }
 }
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
